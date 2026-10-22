@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/boardmanager.tsx","./src/librarymanager.tsx","./src/serialmonitor.tsx","./src/serialplotter.tsx","./src/themepicker.tsx","./src/icons.tsx","./src/main.tsx","./src/sketchfile.ts","./src/themes.ts","./src/useserialmonitor.ts","./src/usesketchtabs.ts","./src/usetaskprogress.ts"],"version":"5.8.3"}

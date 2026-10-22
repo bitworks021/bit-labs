@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Arduino Uno",
+    "fqbn": "arduino:avr:uno"
+  },
+  {
+    "name": "Arduino Mega",
+    "fqbn": "arduino:avr:mega"
+  },
+  {
+    "name": "Arduino Nano",
+    "fqbn": "arduino:avr:nano"
+  },
+  {
+    "name": "ESP32 DevKit",
+    "fqbn": "esp32:esp32:esp32"
+  },
+  {
+    "name": "ESP8266 Generic",
+    "fqbn": "esp8266:esp8266:generic"
+  }
+]

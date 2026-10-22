@@ -1,0 +1,27 @@
+{
+  "name": "bit-lab",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n frontend,backend -c cyan,green \"npm run dev --workspace frontend\" \"npm run dev --workspace backend\"",
+    "build": "npm run build --workspace frontend && npm run build --workspace backend",
+    "test": "npm test --workspace backend",
+    "arduino:setup": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/setup-arduino.ps1",
+    "arduino:version": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/arduino-cli.ps1 version",
+    "arduino:core:install": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/arduino-cli.ps1 core install arduino:avr",
+    "arduino:cores:install": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/install-board-cores.ps1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "esbuild@0.25.12": true
+  }
+}
